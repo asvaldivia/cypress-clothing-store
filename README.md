@@ -43,6 +43,6 @@ npm run cy:run-chrome
 ## 🛠️ Implementation Details
 - **Page Object Model (POM)**: The test case is implemented using POM for better maintainability and readability.  
 - **Performance Testing**: Lighthouse is used to measure and validate the performance of the application.  
-- **Reporting**: Test reports are generated using **Mochawesome** and saved in the `cypress/reports` folder.
+- **Reporting**: Test reports are generated using **Mochawesome** and saved in the `cypress/reports` folder when executed headless the first time.
 
 ---

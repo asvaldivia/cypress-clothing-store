@@ -23,3 +23,9 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+import { generateTestData} from './test-data';
+
+Cypress.Commands.add('generateFakeData', () => {
+  cy.wrap(generateTestData()).as('fakeData');
+});

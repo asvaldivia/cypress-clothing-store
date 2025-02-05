@@ -5,6 +5,7 @@ import LoginPage from '../../pages/LoginPage.js';
 import SignupPage from '../../pages/SignupPage.js';
 import CheckoutPage from '../../pages/CheckoutPage.js';
 import PaymentInformationPage from '../../pages/PaymentInformationPage.js';
+
 // Screen sizes to test
 const screenSizes = ['macbook-13', 'iphone-x'];
 
@@ -64,6 +65,7 @@ screenSizes.forEach((screenSize) => {
             // Logout
             HomePage.logout();
             HomePage.getLoginButton().should('be.visible');
+
         })
     })
         

@@ -25,6 +25,7 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 import { generateTestData} from './test-data';
+import '@cypress-audit/lighthouse/commands'
 
 Cypress.Commands.add('generateFakeData', () => {
   cy.wrap(generateTestData()).as('fakeData');
